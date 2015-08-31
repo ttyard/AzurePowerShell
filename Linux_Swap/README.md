@@ -1,15 +1,15 @@
-#Azure LinuxĞéÄâ»úÉèÖÃswap·ÖÇøµÄ²½Öè
-1.Windows Azure Ä¬ÈÏ´´½¨µÄLinux²Ù×÷ÏµÍ³ÏµÍ³ÊÇ²»´æÔÚswapĞéÄâÄÚ´æµÄ£¬¿ÉÒÔÍ¨¹ıĞŞ¸ÄÅäÖÃÎÄ¼ş½«swapÎÄ¼ş±£´æÔÚAzureÌá¹©µÄÁÙÊ±ÅÌ¡£
-vi /etc/waagent.conf
-ĞŞ¸Ä
-ResourceDisk.EnableSwap=y
-ResourceDisk.SwapSizeMB=500
+#Azure Linuxè™šæ‹Ÿæœºè®¾ç½®swapåˆ†åŒºçš„æ­¥éª¤
+1.Windows Azure é»˜è®¤åˆ›å»ºçš„Linuxæ“ä½œç³»ç»Ÿç³»ç»Ÿæ˜¯ä¸å­˜åœ¨swapè™šæ‹Ÿå†…å­˜çš„ï¼Œå¯ä»¥é€šè¿‡ä¿®æ”¹é…ç½®æ–‡ä»¶å°†swapæ–‡ä»¶ä¿å­˜åœ¨Azureæä¾›çš„ä¸´æ—¶ç›˜ã€‚
+vi /etc/waagent.conf  
+ä¿®æ”¹  
+ResourceDisk.EnableSwap=y   
+ResourceDisk.SwapSizeMB=500  
 
-2.ÉèÖÃÉúĞ§²¢ÖØÆô
-root@ubuntu:~# swapon ¨Ca
-root@ubuntu:~# reboot
+2.è®¾ç½®ç”Ÿæ•ˆå¹¶é‡å¯ 
+root@ubuntu:~# swapon â€“a    
+root@ubuntu:~# reboot    
  
-3.È·ÈÏÊÇ·ñÉúĞ§
-Swapon ¨CsÏÔÊ¾½»»»¿Õ¼äµÄÊ¹ÓÃÇé¿ö
-/mnt/resurceËùÔÚÎ»ÖÃÊÇ/dev/sdb1ÁÙÊ±ÅÌ
+3.ç¡®è®¤æ˜¯å¦ç”Ÿæ•ˆ    
+Swapon â€“sæ˜¾ç¤ºäº¤æ¢ç©ºé—´çš„ä½¿ç”¨æƒ…å†µ    
+/mnt/resurceæ‰€åœ¨ä½ç½®æ˜¯/dev/sdb1ä¸´æ—¶ç›˜    
  
